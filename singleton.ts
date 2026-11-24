@@ -7,7 +7,7 @@ export class Singleton {
 
   public static getInstance(): Singleton {
     if (Singleton.instance === null) {
-      Singleton.instance = new Singleton(); // 최초 1회만 생성
+      Singleton.instance = new Singleton();
     }
     return Singleton.instance;
   }
